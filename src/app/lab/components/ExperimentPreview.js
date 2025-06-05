@@ -47,7 +47,7 @@ export default function ExperimentPreview({ experiments }) {
             }}
           />
           <div
-            className="absolute top-0 left-0 h-full w-full bg-no-repeat bg-cover blur-lg z-10"
+            className="absolute top-0 left-0 h-full w-full bg-no-repeat bg-cover blur-sm z-10"
             style={{
               backgroundImage: `url(${placeholder})`,
             }}
