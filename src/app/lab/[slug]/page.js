@@ -7,7 +7,8 @@ import ProjectLink from "@/app/lab/[slug]/components/ProjectLink";
 import VideoPreview from "@/app/lab/[slug]/components/VideoPreview";
 import { formatDate } from "@/helpers/date";
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const { slug } = params;
 
   const experiment = experiments.find((experiment) => experiment.slug === slug);
@@ -30,7 +31,8 @@ export function generateStaticParams() {
   return data;
 }
 
-export default function Experiment({ params }) {
+export default async function Experiment(props) {
+  const params = await props.params;
   const filteredExperiments = experiments.filter(
     (experiment) => experiment.type === "internal" || experiment.mdx
   );

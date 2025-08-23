@@ -52,8 +52,8 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
-  const savedTheme = cookies().get("color-theme");
+export default async function RootLayout({ children }) {
+  const savedTheme = (await cookies()).get("color-theme");
   const theme = savedTheme?.value || "dark";
 
   return (
