@@ -9,7 +9,7 @@ export default function WorkExperience() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {data.experience.map((work, index) => {
-          const { company, role, location, date, description } = work;
+          const { company, role, date } = work;
           return (
             <div
               key={"work-experience-" + index}
