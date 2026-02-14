@@ -50,6 +50,7 @@ export default function Tooltip({ children, text }) {
       </button>
       {isOpen && (
         <span
+          // eslint-disable-next-line react-hooks/refs
           ref={refs.setFloating}
           style={floatingStyles}
           {...getFloatingProps()}

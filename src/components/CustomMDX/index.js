@@ -71,7 +71,13 @@ export default function CustomMDX({ slug, type }) {
   return (
     <article className="w-full flex flex-col gap-2 text-neutral-700 dark:text-neutral-200 leading-7 pt-4 sm:pt-8 relative">
       <DashedLine direction="horizontal" className="top-0" />
-      <MDXRemote source={content} components={customComponents} />
+      <MDXRemote
+        source={content}
+        components={customComponents}
+        options={{
+          blockJS: false,
+        }}
+      />
     </article>
   );
 }
