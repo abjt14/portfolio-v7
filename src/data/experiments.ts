@@ -1,4 +1,5 @@
 export type ExperimentSlug =
+  | "chain-picker"
   | "bloom-icons"
   | "shimmering-dots"
   | "family-color-picker"
@@ -53,6 +54,26 @@ export type Experiment =
     });
 
 export const experiments = [
+  {
+    slug: "chain-picker",
+    name: "Chain Picker",
+    type: "preview",
+    href: null,
+    preview: {
+      base: {
+        type: "video",
+        width: 1322,
+        height: 1058,
+        placeholder:
+          "data:image/webp;base64,UklGRnYDAABXRUJQVlA4WAoAAAAgAAAAgwAAaQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggiAEAANALAJ0BKoQAagA+KRSJQyGhIRCEEBgChLS3cLpJNin6zfqr7JJTJ/9351Pmv2AP0u9GbqIAU+fHDhwYoY0mEkL1jfHJYxZlzTxFO6JqxS0wM2bNmzZs2bNmzZs2bNmzZs2bNmzZogAA/v/elpWlQ3T8mTVS9dZSK15Vrcf/kNW+/9aJ+//9udXc2L+dLH/qDZ//TJP/6c/5rDtfzhwdeovp7xN1+H7/5WTa+3Vzg7hD0XSolSeYcHvMLgD1+6m0io91GaS4x7HLfBX9AVVx+gXQbdfPDESxp+PFkwAb7WOLGqDgtKwREaAL/1eMts2/iKF23d4gw8oz/+9wvex1+LLJc7kN3ztf5r/Gl9/ifooAB5Xj+Gjzn/g4fOSeztX9//UY/EEUL/kdpvttI+5+9jAKLB58xKguoDPmOeRyT5crEUwq3Iw7TExzLmgfAK+J08V9zXOF88/ONvUwHtleUFZnqNR8grxTUwpgnKuzCiv6F5CXBvcrvNMdBYos0p04N5z7gAAAAAAA",
+      },
+    },
+    date: "2026-09-07",
+    mdx: false,
+    technologies: ["React.js", "Framer Motion", "CSS"],
+    attributes: null,
+    theme: "dark",
+  },
   {
     slug: "bloom-icons",
     name: "Bloom Icons",
