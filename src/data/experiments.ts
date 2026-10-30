@@ -47,6 +47,7 @@ type ExperimentBase = {
   technologies: string[];
   attributes: ExperimentAttributes | null;
   theme: "dark" | "light";
+  overlay?: boolean;
 };
 
 export type Experiment =
@@ -80,6 +81,7 @@ export const experiments = [
     technologies: ["WebGL", "React.js"],
     attributes: null,
     theme: "dark",
+    overlay: false,
   },
   {
     slug: "chain-picker",

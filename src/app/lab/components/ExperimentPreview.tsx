@@ -9,7 +9,7 @@ export default function ExperimentPreview({
 }: {
   experiments: Experiment;
 }) {
-  const { slug, name, preview, date, theme } = experiments;
+  const { slug, name, preview, date, theme, overlay = true } = experiments;
 
   let href: string | null = null;
   let externalIcon = false;
@@ -49,6 +49,7 @@ export default function ExperimentPreview({
             className={clsx(
               "absolute top-0 left-0 h-full w-full z-30 transition-all duration-500",
               theme === "dark" &&
+                overlay &&
                 `bg-gradient-to-b opacity-25 from-transparent from-0% to-neutral-925 ${
                   href !== null ? "group-hover:opacity-75" : ""
                 }`
